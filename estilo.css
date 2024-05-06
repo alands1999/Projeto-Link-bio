@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ysabeau infant', sans-serif;
+}
+/*Seçao Banner */
+.banner, .estatisticas {
+    width: 100%;
+    height: 100vh;
+}
+video {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gradiente {
+    background: linear-gradient(90deg, #ffdf00, #009c3b);
+    border-radius: 100%;
+    width: 215px;
+    height: 215px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto-perfil img {
+    width: 95%;
+    height: 95%;
+    border-radius: 100%;
+}
+/* 
+h1 span {
+    border-bottom: 4px solid yellow;
+} */
+h1::before {
+    content: "";
+    background: linear-gradient(90deg, #ffdf00, #009c3b);
+    width: 55px;
+    height: 5px;
+    position: absolute;
+    bottom: 45px;
+    left: 5px;
+    border-radius: 4px;
+
+}
+.foto-perfil h1 {
+    position: relative;
+}
+h1::after {
+    position: absolute;
+    content: "";
+    background-image: url('Assets/verificado.png');
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+    bottom: 50%;
+}
+.links {
+    width: 768px;
+    margin: 0 auto;
+}
+
+ul div {
+    background-color: #0200006e;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+ul li {
+    margin: 0 auto;
+    padding: 12px 0px;
+    text-align: center;
+}
+/*icones redes sociais */
+.youtube::before {
+    content: "";
+    background-image: url('Assets/youtube.png');
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    margin-left: 6px;
+}
+.instagram::before {
+    content: "";
+    background-image: url('Assets/instagram.png');
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    margin-left: 6px;
+}
+.twitter::before {
+    content: "";
+    background-image: url('Assets/twitter.png');
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    margin-left: 6px;}
+.facebook::before {
+    content: "";
+    background-image: url('Assets/facebook.png');
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    margin-left: 6px;}
+.twitch::before {
+    content: "";
+    background-image: url('Assets/twitch.png');
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    margin-left: 6px;}
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    font-size: 17px;
+}
+/*Secao estatisticas */
+.estatisticas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    background-image: url('Assets/imagem-de-fundo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+table {
+    width: 800px;
+    text-align: center;
+}
+caption, h1 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 3px 1px 2px #000000;
+    font-size: 50px;
+    padding-bottom: 40px;
+}
+thead th {
+    padding: 20px;
+}
+td:first-child, th:first-child {
+    text-align: justify;
+    padding: 20px 0px 20px 35px;
+    position: relative;
+}
+/*escudos times */
+.brasil::before {
+    position: absolute;
+    left: 0;
+    bottom: 25%;
+    content: "";
+    background-image: url('Assets/cbf.png');
+    background-size: cover;
+    width: 25px;
+    height: 35px;
+    margin-left: 6px;
+}
+.santos::before {
+    position: absolute;
+    left: 0;
+    bottom: 25%;
+    content: "";
+    background-image: url('Assets/santos.png');
+    background-size: cover;
+    width: 25px;
+    height: 27px;
+    margin-left: 6px;
+}
+.barcelona::before {
+    position: absolute;
+    left: 0;
+    bottom: 25%;
+    content: "";
+    background-image: url('Assets/barcelona.png');
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    margin-left: 6px;
+}
+.psg::before {
+    position: absolute;
+    left: 0;
+    bottom: 25%;
+    content: "";
+    background-image: url('Assets/psg.png');
+    background-size: cover;
+    width: 25px;
+    height: 27px;
+    margin-left: 6px;
+}
+.al-hilal::before {
+    position: absolute;
+    left: 0;
+    bottom: 25%;
+    content: "";
+    background-image: url('Assets/alhilal.png');
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    margin-left: 6px;
+}
+tr:nth-of-type(even), thead tr {
+    background-color: #0200006e;
+    color: white;
+}
+tbody tr:nth-of-type(odd) {
+    background-color: #fff;
+}
+
